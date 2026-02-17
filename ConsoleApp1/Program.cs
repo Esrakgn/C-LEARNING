@@ -27,7 +27,7 @@ else
 
 
 /*
-// Logical Operators
+// ----Logical Operators----
 
 using System.ComponentModel.Design;
 
@@ -98,7 +98,7 @@ else
 
 
 /*
-// DENEME ÜRÜN VE KDV HESAPLAMA
+// -----DENEME ÜRÜN VE KDV HESAPLAMA-----
 
 string productName = "Coffe Machine";
 decimal price = 100.00m;   
@@ -121,7 +121,7 @@ Console.WriteLine($"GRAND TOTAL: {grandTotal}");
 */
 
 /*
-//READLINE
+//----READLINE------
 
 Console.WriteLine("What is your name?");
 string userName = Console.ReadLine();
@@ -173,7 +173,7 @@ else
 
 
 
-//ARRAY
+//----ARRAY-----
 
 /*
 string[] gamingConsoles = { "PS5", "Xbox", "Switch", "PC" };
@@ -183,10 +183,132 @@ for (int i = 0; i < gamingConsoles.Length; i++)
 }
 */
 
+/*
 string[] cities = { "Istanbul", "Ankara", "Izmir", "Bursa", "Antalya"};
 foreach (string city in cities)
 {
     Console.WriteLine(city);
 }
 
- 
+*/
+
+
+// ----LIST-----
+
+/*
+List<string> shoppingCart = new List<string>();
+
+// Veri Ekleme (Add)
+shoppingCart.Add("Laptop");
+shoppingCart.Add("Mouse");
+shoppingCart.Add("Keyboard");
+
+
+//Veri Kontrolü (Contains)
+bool hasMouse = shoppingCart.Contains("Mouse");
+//Console.WriteLine($"Is Mouse in the shopping cart? {hasMouse}");
+
+
+//Veri Silme (Remove)
+shoppingCart.Remove("Keyboard");
+foreach (string item in shoppingCart) 
+{
+    Console.WriteLine(item);
+}
+
+//Belirli Bir Konumda Veri Silme (RemoveAt)
+shoppingCart.RemoveAt(1);
+foreach (string item in shoppingCart)
+{
+    Console.WriteLine(item);
+}
+
+// Listeyi Temizleme (Clear)
+shoppingCart.Clear();
+foreach (string item in shoppingCart)
+{
+    Console.WriteLine(item);
+}
+
+*/
+
+/*
+List<string> customerNames = new List<string>();
+
+customerNames.Add("Esra");
+customerNames.Add("Melih");
+customerNames.Add("Ayse");
+
+if (customerNames.Contains("Esra"))
+{
+    customerNames.Remove("Esra");
+}
+
+Console.WriteLine("Customer names: ");
+
+foreach(string customer in customerNames)
+{
+    Console.WriteLine(customer);
+}
+*/
+
+/*
+
+class Program
+{
+    // İŞTE O EKSİK OLAN GİRİŞ KAPISI:
+    static void Main(string[] args)
+    {
+        // 1. Önce senin yazdığın MyMethod sınıfından bir nesne üretelim
+        MyMethod helper = new MyMethod();
+
+        // 2. Metodunu çağıralım
+        helper.SayHello("Esra");
+
+        // 3. Konsolun hemen kapanmaması için bir tuş bekleyelim
+        Console.WriteLine("\nProgram başarıyla çalıştı. Çıkmak için bir tuşa bas...");
+        Console.ReadKey();
+    }
+}
+
+
+*/
+
+
+
+//----METHODS----
+
+/*
+class MyMethod
+{
+    static void main()
+    {
+        sayHello();
+    }
+
+
+    static void sayHello() 
+    {
+        Console.WriteLine("Hello, World!");
+    }
+
+
+}
+
+*/
+
+
+/*
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Program started");
+    }
+}
+
+*/
+
+
+
+
